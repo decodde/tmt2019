@@ -1,0 +1,63 @@
+#nav{
+    position:fixed;
+    right:0px;
+    bottom:10px;
+    z-index:2;
+}
+
+#nav>.nav-btn{
+    position:relative;
+    padding:3px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#alphashow{
+    transition:all 0.7s ease-in;
+
+}
+a{
+    text-decoration: none;
+}
+#moreDetailsImg{
+    position:relative;
+    top:30px;
+    padding:5px;
+}
+.moreDetailsCard2{
+    padding-top: 50px;
+}
+.moreDetailsCard>p:nth-child(even){
+    margin:5px;
+    background-color:#1483ed !important ;
+    color:white;
+}
+.moreDetailsCard>p:nth-child(odd){
+    margin:5px;
+    background-color:white ;
+    color:#1483ed;
+}
+.moreDetailsCard2>p:nth-child(even){
+    margin:5px;
+    background-color:#1483ed !important ;
+    color:white;
+}
+.moreDetailsCard2>p:nth-child(odd){
+    margin:5px;
+    background-color:white ;
+    color:#1483ed;
+}
+.moreDetailsCard{
+    padding:0px !important;
+}
+#up{
+    position:fixed;
+    bottom:20px;
+    z-index:3;
+}
+#up>div{
+    height:10px;
+    width:0px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom:15px solid rgb(66, 66, 66)
+}

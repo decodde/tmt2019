@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/h.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>TMT Class 19</title>
+    </head>
+    <body>  
+        <div>
+            <!--NAVIGATION-->
+            <div id="nav">
+                <div onclick="switchView('alphasort')" class="nav-btn h-bg-blight h-shadow-blight">
+                    <span>
+                        <img src="./img/050-filter.svg" height="12px" width="12px">
+                    </span>
+                    <span class="h-text h-text-white h-text-bold h-font-tiny-2">Alpha Sort</span>
+                </div>
+                <br>
+                <div onclick="switchView('searchResult')" class="nav-btn h-bg-pinkish h-shadow-pinkish">
+                    <span>
+                        <img src="./img/logo.png" height="12px" width="12px">
+                    </span>
+                    <span class="h-text h-text-white h-text-bold h-font-tiny-2">Search Page</span>
+                </div>
+                <br>
+                <div onclick="aboutUsPop.pop()" class="nav-btn h-bg-lightblue h-shadow-lightblue">
+                    <span>
+                        <img src="./img/020-compass.svg" height="12px" width="12px">
+                    </span>
+                    <span class="h-text h-text-white h-text-bold h-font-tiny-2">About Us</span>
+                </div>
+                <br>
+                <div class="h-text-right">
+                    <span class="h-text-bold h-card-1 h-bg-red h-text-right h-text-white nav-btn" onclick="cmd('a')">
+                        a
+                    </span>
+                    &nbsp;&NonBreakingSpace;
+                    <span class="h-text-bold h-card-1 h-bg-purple h-text-right h-text-white nav-btn" onclick="cmd('s')">
+                        s
+                    </span>
+                    &nbsp;
+                </div>
+                <br>
+                <div id="cmdInput" class="h-hide nav-btn h-bg-lightgreen h-shadow-lightgreen h-anim-rollin-right">
+                    <span>
+                        <input class="h-input" type="text" placeholder="...cmd here.." >
+                    </span>
+                </div>
+            </div>
+
+            <!--PAGES-->
+            <div>
+                <!--search -->
+                <div class="h-card h-bg-white" >
+                    <a name="uppp">
+                        <input class="h-input h-text" id="search" type="search" placeholder="..search ..">
+                    </a>
+                    <span onclick="APP.search(1,null)"  class="h-text h-font-tiny-2 h-bg-purewhite h-outline-lightblue h-card-1">
+                        <img height="15px" width="15px" src="./img/050-filter.svg">Search
+                    </span>
+                </div>
+                <!--up-->
+                <a href="#uppp" id="up" class="h-outline-lightblue h-shadow-lightblue h-bg-white h-card-1">
+                    <div >
+                    </div>
+                </a>
+                <!--ALPHA SORT PAGE-->
+                <div id="alphasort" class="page h-card-1 h-show h-anim-rollin">
+                    <h5 class="h-text h-text-black">Alphabetically Sorted</h5>
+                    <diV id="alphabets"style="display:block;overflow: auto;white-space: nowrap;" class="h-card h-bg-white">
+
+                    </diV>
+                    <!--
+                    <div class="h-bg-white h-shadow-black h-row h-card-sm">
+                        <div class="h-col-4 moreDetailsCard">
+                            <p class="h-text-bold h-font-tiny-2 h-card-1">TMT/14/9304</p>
+                            <p class="h-text-bold h-font-tiny-2 h-card-1">MALE</p>
+                            <p class="h-text-bold h-font-tiny-2 h-card-1">Christian</p>
+                        </div>
+                        <div class="h-col-4">
+                            <img id="" class="h-outline-lightblue h-pail-center h-circle" src="./img/040-user.svg" height="60px" width="60px">
+                        </div>
+                        <div class="h-col-4 moreDetailsCard">
+                            <p style="display:block;overflow: auto;white-space: nowrap;" class="h-text-bold h-font-tiny-2 h-card-1">08127329895</p>
+                            <p style="display:block;overflow: auto;white-space: nowrap;" class="h-text-bold h-font-tiny-2 h-card-1">dannyoma75@gmail.com</p>
+                            <p style="display:block;overflow: auto;white-space: nowrap;" class="h-text-bold h-font-tiny-2 h-card-1">Obokun</p>
+                        </div>
+                    </div> -->
+                    <a name="alpha" id="alphashow" class="h-card h-anim-rollin-right">
+
+                    </a>
+                </div>
+
+                <!--search page-->
+                <div id="searchResult" class="page h-hide h-anim-rollin-left">
+                    <div id="searchRes" class="h-bg-white h-card h-anim-rollin-right">
+
+                    </div>
+                </div>
+
+                <!--MORE INFO PAGE-->
+                <div id="moreinfo" class="page h-hide h-anim-rollin-left">
+                    <div class="h-card-sm h-anim-rollin-left" id="moreDetails">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/h.js"></script>
+        <script type="text/javascript" src="js/Thread.js"></script>
+        <script type="text/javascript" src="js/class19-obfuscated.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            window.onload=()=>{
+                APP.start()
+            }
+        </script>
+    </body>
+</html>
